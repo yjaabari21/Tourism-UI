@@ -1,0 +1,202 @@
+<script src="https://kit.fontawesome.com/bad741a699.js" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital@1&family=Aref+Ruqaa&family=Cairo:wght@200&family=Kufam&family=Libre+Bodoni:ital,wght@1,400;1,500&family=Mada:wght@200;900&family=Oleo+Script:wght@700&family=Orelega+One&family=Rakkas&family=Reem+Kufi:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital@1&family=Aref+Ruqaa&family=Bangers&family=Cairo:wght@200&family=Kufam&family=Libre+Bodoni:ital,wght@1,400;1,500&family=Mada:wght@200;900&family=Oleo+Script:wght@700&family=Orelega+One&family=Rakkas&family=Reem+Kufi:wght@500&display=swap');
+
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    .main{
+        display: grid;
+        grid-template-columns: 500px 500px 500px;
+        justify-content: center;
+    }
+    .trip-card{
+        box-shadow: 4px 4px 5px #000;
+        margin: 15px 15px;
+    }
+    .img1{
+        height: 25vh;
+        background-image: url(img10.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .img2{
+        height: 25vh;
+        background-image: url(img3.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .img3{
+        height: 25vh;
+        background-image: url(img12.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .img4{
+        height: 25vh;
+        background-image: url(img5.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .img5{
+        height: 25vh;
+        background-image: url(img9.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .img6{
+        height: 25vh;
+        background-image: url(img2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .body{
+        padding: 15px;
+    }
+    .foot{
+        background-color: #EBE1D8;
+        padding: 15px;
+    }
+    .pat{
+        padding: 8px;
+        background-color: red;
+        font-weight: bold;
+        border: none;
+        text-align: center;
+        letter-spacing: 1.2PX;
+        text-transform: capitalize;
+    }
+    .price{
+        font-size: 18PX;
+        background-color: transparent;
+        letter-spacing: 1PX;
+        float: right;
+        padding: 8px;
+        border: none;
+        font-weight: bold;
+        text-align: center;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    .heder , .desc{
+        text-align: center;
+        letter-spacing: 1PX;
+    }
+    .heder{
+        font-family: 'Oleo Script';
+    }
+    .desc{
+        font-weight: bold;
+        font-family: 'Bangers';
+    }
+    #links-pt{
+        text-decoration: none;
+        color: #000;
+    }
+
+    @media only screen and (max-width:1250px) {
+        .main{
+            grid-template-columns: 500px 500px;
+        }
+    }
+</style>
+
+
+<div class="main">
+  <div class="trip-card">
+      <div class="img1"></div>
+      <h1 class="heder">India</h1>
+      <h5 class="desc">Exploration</h5>
+      <div class="body">
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit labore et dolore magna aliqua. Ut enim ad minim veniamDuis aute irure dolor in reprehenderit in voluptateofficia deserunt mollit anim id est laborum."
+      </div>
+      <div class="foot">
+          <button class="pat"><a id="links-pt" href="pickTrip.html">pick a trip</a></button>
+          <button class="price">2000$</button>
+      </div>
+  </div>
+  
+  <div class="trip-card">
+    <div class="img2"></div>
+    <h1 class="heder">Bali</h1>
+    <h5 class="desc">Adventure</h5>
+    
+    <div class="body">
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit labore et dolore magna aliqua. Ut enim ad minim veniamDuis aute irure dolor in reprehenderit in voluptateofficia deserunt mollit anim id est laborum."
+    </div>
+    <div class="foot">
+        <button class="  pat"><a id="links-pt" href="pickTrip.html">pick a trip</a></button>
+        <button class="price">3500$</button>
+    </div>
+</div>
+
+<div class="trip-card">
+    <div class="img3"></div>
+    <h1 class="heder">Tanzania</h1>
+    <h5 class="desc">Adventure , Wildlife</h5>
+    <div class="body">
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit labore et dolore magna aliqua. Ut enim ad minim veniamDuis aute irure dolor in reprehenderit in voluptateofficia deserunt mollit anim id est laborum."
+    </div>
+    <div class="foot">
+        <button class="pat">
+            <a id="links-pt" href="pickTrip.html">pick a trip</a>
+        </button>
+        <button class="price">2500$</button>
+    </div>
+</div>
+
+<div class="trip-card">
+    <div class="img4"></div>
+    <h1 class="heder">Turkey</h1>
+    <h5 class="desc">Exploration</h5>
+    <div class="body">
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit labore et dolore magna aliqua. Ut enim ad minim veniamDuis aute irure dolor in reprehenderit in voluptateofficia deserunt mollit anim id est laborum."
+    </div>
+    <div class="foot">
+        <button class="pat"><a id="links-pt" href="pickTrip.html">pick a trip</a></button>
+        <button class="price">1500$</button>
+    </div>
+</div>
+
+<div class="trip-card">
+    <div class="img5"></div>
+    <h1 class="heder">Europe</h1>
+    <h5 class="desc">Adventure , Exploration</h5>
+    <div class="body">
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit labore et dolore magna aliqua. Ut enim ad minim veniamDuis aute irure dolor in reprehenderit in voluptateofficia deserunt mollit anim id est laborum."
+    </div>
+    <div class="foot">
+        <button class="pat"><a id="links-pt" href="pickTrip.html">pick a trip</a></button>
+        <button class="price">5000$</button>
+    </div>
+</div>
+
+<div class="trip-card">
+    <div class="img6"></div>
+    <h1 class="heder">South America</h1>
+    <h5 class="desc">Adventure</h5>
+    <div class="body">
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit labore et dolore magna aliqua. Ut enim ad minim veniamDuis aute irure dolor in reprehenderit in voluptateofficia deserunt mollit anim id est laborum."
+    </div>
+    <div class="foot">
+        <button class="pat"><a id="links-pt" href="pickTrip.html">pick a trip</a></button>
+        <button class="price">3500$</button>
+    </div>
+</div>
+</div>

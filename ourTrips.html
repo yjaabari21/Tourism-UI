@@ -1,0 +1,162 @@
+<script src="https://kit.fontawesome.com/bad741a699.js" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Amiri:ital@1&family=Aref+Ruqaa&family=Bangers&family=Cairo:wght@200&family=Kufam&family=Libre+Bodoni:ital,wght@1,400;1,500&family=Mada:wght@200;900&family=Oleo+Script:wght@700&family=Orelega+One&family=Rakkas&family=Reem+Kufi:wght@500&display=swap');
+    .cards{
+        display: grid;
+        grid-template-columns: 500px 500px 500px;
+    }
+    .hea{
+        font-family: 'Bangers';
+        text-align: center;
+        line-height: 160px;
+        letter-spacing: 15px;
+        font-size: 28px;
+        display: none;
+        transition: 0.8s;
+    }
+    .des1:hover .hea{
+        display: block;
+        margin: 0;
+        color: white;
+        height: 25vh;
+        background-color: rgba(0, 0, 0, 0.336);
+
+    }
+    .des2:hover .hea{
+        display: block;
+        margin: 0;
+        height: 25vh;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.336);
+    }
+    .des3:hover .hea{
+        display: block;
+        margin: 0;
+        color: white;
+        height: 25vh;
+        background-color: rgba(0, 0, 0, 0.336);
+    }
+    .des4:hover .hea{
+        display: block;
+        color: white;
+        margin: 0;
+        height: 25vh;
+        background-color: rgba(0, 0, 0, 0.336);
+    }
+    .des5:hover .hea{
+        display: block;
+        margin: 0;
+        height: 25vh;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.336);
+    }
+    .des6:hover .hea{
+        display: block;
+        margin: 0;
+        color: white;
+        height: 25vh;
+        background-color: rgba(0, 0, 0, 0.336);
+    }
+    .des1 , .des2 , .des3 , .des4 , .des5 , .des6{
+        margin: 15px;
+        height: 25vh;
+    }
+    .des1{
+        background-image: url(Asia.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .des2{
+        background-image: url(africa.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .des3{
+        background-image: url(euro.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .des4{
+        background-image: url(latin.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .des5{
+        background-image: url(oceans.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .des6{
+        background-image: url(polar.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    #as , #af  ,  #e, #sa , #o , #p{
+        text-decoration: none;
+        color: white;
+    }
+
+@media only screen and (max-width:1250px){
+    .cards{
+        grid-template-columns: 500px;
+        justify-content: center;
+    }
+    .des1{
+        width: auto;
+    }
+}
+</style>
+
+
+
+<div class="cards">
+    <div class="des1">
+        <h2 class="hea">
+        <a href="" id="as"> 
+           Asia
+        </a>
+        </h2>
+    </div>
+    <div class="des2">
+        <h2 class="hea">
+        <a href="" id="af">
+            Africa
+        </a>
+        </h2>
+    </div>
+    <div class="des3">
+        <h2 class="hea">
+            <a id="e" href="">
+          Eroupe
+        </a></h2>
+    </div>
+    <div class="des4">
+        <h2 class="hea">
+            <a id="sa" href="">
+             South America
+        </a></h2>
+    </div>
+    <div class="des5">
+        <h2 class="hea">
+        <a id="o" href="">
+           oceans
+         </a>
+        </h2>
+    </div>
+    <div class="des6">
+        <h2 class="hea">
+         <a id="p" href="">
+           Polar
+        </a>
+      </h2>
+    </div>
+</div>
+<script></script>

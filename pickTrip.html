@@ -1,0 +1,322 @@
+<script src="https://kit.fontawesome.com/bad741a699.js" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital@1&family=Aref+Ruqaa&family=Cairo:wght@200&family=Kufam&family=Libre+Bodoni:ital@1&family=Mada:wght@200&family=Orelega+One&family=Rakkas&family=Reem+Kufi:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital@1&family=Aref+Ruqaa&family=Cairo:wght@200&family=Kufam&family=Libre+Bodoni:ital,wght@1,400;1,500&family=Mada:wght@200&family=Orelega+One&family=Rakkas&family=Reem+Kufi:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital@1&family=Aref+Ruqaa&family=Cairo:wght@200&family=Kufam&family=Libre+Bodoni:ital,wght@1,400;1,500&family=Mada:wght@200;900&family=Orelega+One&family=Rakkas&family=Reem+Kufi:wght@500&display=swap');
+
+    *{
+        margin: 0;
+        padding: 0;
+    }
+  .box{
+        background-color: #B16718;
+        height: 25vh;
+        width: 98.6%;
+        text-align: center;
+        font-size: 28px;
+        font-weight: bold;
+        padding: 10px;
+        margin-top: 2px;
+        margin-left: 0;
+        margin-right: 0;      
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+    }
+    #dest{
+        display: grid;
+        grid-template-columns: 250px 250px;
+        align-items: center;
+    }
+    .inpFeild{
+        padding: 12px;
+        width: 100%;
+        font-weight: bold;
+        font-family: 'Mada';
+        text-transform: capitalize;
+        letter-spacing: 1px;
+    }
+    #inp1 , #inp2{
+        margin: 10px auto;
+    }
+    .input1{
+        width: 50%;
+    }
+   label{
+       display: block;
+       text-align: left;
+       color: #ccc3d6;
+       text-transform: capitalize;
+       font-family: 'Libre Bodoni';
+    }
+    #ff{
+       letter-spacing: 1px;
+
+    }
+    #ft{
+        letter-spacing: 1px;
+    }
+    .btnBook{
+        padding:12px;
+        margin-top: 30px;
+        text-transform: capitalize;
+        background-color: #4C747B;
+        color: white;
+        font-weight: bold;
+        letter-spacing: 1px;
+        font-family: 'Libre Bodoni';
+    }
+    #inp3{
+        padding: 12px;
+        font-size: 15px;
+        font-weight: bold;
+    }
+    #trave{
+        padding: 12px;
+    }
+    #class{
+        padding: 12px;
+    }
+    .pass{
+       display : grid;
+        grid-template-columns : 180px 180px;
+        justify-content : space-between;
+        align-items: center;
+        padding : 15px;
+        margin:15px 0;
+        background-color :#D31336;
+        border-radius :  12px;    
+        position : absolute;
+        top : 135;
+        right : 250px;
+    }
+    #adu , #child{
+        font-size: 25px;
+        text-align: center;
+        font-weight: bold;
+        width: 70%;
+        height: 35px;
+    }
+    #incra , #decra , #incrc , #decrc{
+        padding: 7px;
+        font-weight: bold;
+    }
+    #incra , #incrc{
+        /*#B9A180*/
+        background-color: gold;
+    }
+    #decra , #decrc{
+        background-color: #964B00;
+    }
+    .done{
+        padding: 8px;
+        border-radius: 10px;
+        background-color: #3A5A81;
+        color: #FFF;
+        letter-spacing: 2px;
+        font-weight: bold;
+        border: 1px solid #3A5A81;
+        font-family: 'Libre Bodoni';
+    }
+    .done:hover{
+        border: none;
+    }
+    .cancel{
+        border: 1px solid #252131;
+        padding: 8px;
+        letter-spacing: 2px;
+        border-radius: 10px;
+        float: right;
+        color: #FFF;
+        font-family: 'Libre Bodoni';
+        background-color: #252131 ;
+        font-weight: bold;
+    }
+    .cancel:hover{
+        border: none;
+    }
+    .btns{
+        display: grid;
+        grid-template-columns: 90px 260px;
+    }
+    ::placeholder{
+        color: black;
+        font-size: 21px;
+        text-transform: capitalize;
+        text-align: center;
+        font-family: 'Orelega One';
+    }
+    select{
+        text-transform: capitalize;
+        font-weight: bold;
+        
+    }
+    option{
+        text-transform: capitalize;
+        font-size: 15PX;
+        font-weight: bold;
+    }
+    @media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2){
+        .box{
+            height: 25vh;
+            display: block;
+            width: 95.5%;
+            overflow: hidden;
+            margin: 15px 0;
+        }
+        .input1{
+            width: 98%;
+        }
+        #inp1 , #inp3 , #trave , #class{
+            width: 89%;
+        }
+        .pass{
+        position: absolute;
+        top: 135;
+        right: 50px;
+        }
+    }
+    @media only screen 
+  and (min-device-width: 834px) 
+  and (max-device-width: 1112px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+        .box{
+            height: 25vh;
+            display: block;
+            width: 95.5%;
+            overflow: hidden;
+            margin: 15px 0;
+        }
+        .input1{
+            width: 98%;
+        }
+        #inp1 , #inp3 , #trave , #class{
+            width: 89%;
+        }
+        .pass{
+        position: absolute;
+        top: 135;
+        right: 50px;
+        }
+    }
+</style>
+<div class="box">
+    <!--div id="dest"-->
+    <div class="input1" style="margin: 15px;">
+     <label for="inp1" id="ff">offer name</label>
+     <input class="inpFeild" id="inp1" type="text">
+   </div>
+    <div class="input3" style="margin: 15px;">
+    <label for="inp3">date</label>
+    <input class="" id="inp3" type="date">
+    </div>
+    <div class="trave">
+    <div class="fTrav" style="margin: 15px;">
+    <label for="trave">travellers</label>
+    <input type="text" name="" id="trave" class="trav" readonly>
+    </div>
+    <div class="pass">
+        <label for="adu">Adults</label>
+        <div class="adults" style="display: flex; margin: 15px;">
+            <button id="incra">+</button>    
+            <input type="text" readonly id="adu">
+            <button id="decra">-</button>
+        </div>
+        <label for="child">Child</label>
+        <div class="chidren" style="display: flex; margin: 15px;">
+            <button id="incrc">+</button>    
+            <input type="text" id="child" readonly>
+            <button id="decrc">-</button>
+        </div>
+        <div class="btns">
+        <div id="done">
+        <button type="submit" class="done" onclick="traveNum()">Done</button>
+        </div>
+        <div id="cancel">
+        <button class="cancel">Cancel</button>
+        </div>
+        </div>
+    </div>
+    </div>
+    <div class="clas" style="margin: 15px;" >
+        <label for="class">class</label>
+    <select name="" id="class">
+        <option selected hidden>class</option>
+        <option value="Eco">economy</option>
+        <option value="business">business</option>
+        <option value="fClass">first class</option>
+    </select>
+   </div>
+  <button type="submit" class="btnBook">book a trip</button>
+</div>
+<script>
+    //declare vlaues
+    let a =1;
+    let c =0;
+    //give html elements an values
+    document.getElementById('adu').value = 1;
+    document.getElementById('child').value = 0;
+    //declare buttons var to event listner
+    var incra = document.getElementById('incra');
+    var decra = document.getElementById('decra');
+    var incrc = document.getElementById('incrc');
+    var decrc = document.getElementById('decrc');
+    //increase adult function
+    incra.addEventListener('click' , function(){
+        a = a + 1;  
+        document.getElementById('adu').value= a;
+    });
+     //decrease adult function
+    decra.addEventListener('click' , function(){
+        if(document.getElementById('adu').value >1){
+            a = a -1;
+            document.getElementById('adu').value = a;
+        }
+    });
+    //increase child function
+    incrc.addEventListener('click' , function(){
+        c = c + 1;  
+        document.getElementById('child').value= c; 
+        decrc.disabled=false;
+    });
+     //decrease child function
+    decrc.addEventListener('click' , function(){
+       
+           if(document.getElementById('child').value == 0){
+             decrc.disabled = true;
+       }
+       else{
+            c = c -1;
+            document.getElementById('child').value = c;    
+       }
+     });
+
+     function traveNum(){
+        var x = parseInt(document.getElementById('adu').value) ;
+        var y = parseInt(document.getElementById('child').value);
+        var z = x + y;
+        var trave = document.getElementById('trave');
+        trave.setAttribute('placeholder' , String(z + ' travellers'));
+     };
+     
+
+
+    //JQUERY CODE
+    $(document).ready(function(){
+         $('pass').hide();
+         $(".trav").click(function(){
+            $('.pass').show(2000);
+        });
+        $('.done').click(function(){
+            $('.pass').fadeOut();
+        })
+        $('.cancel').click(function(){
+            $('.pass').hide();
+        })
+    });
+</script>

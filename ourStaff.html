@@ -1,0 +1,288 @@
+<script src="https://kit.fontawesome.com/bad741a699.js" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+
+<style>
+    *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    }
+    .staffs{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 15px 30px;
+    margin: 15px;
+    justify-content:space-evenly;
+    align-items: center;
+    }
+    .persons{
+    margin: 15px;
+    box-shadow: 4px 4px 5px #ff0000;
+    }
+    .desc{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+    .person1 , .person2 , .person3 , .person4 , .person5 , .person6 , .person7 , .person8 {
+    padding: 5px;
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: uppercase;
+    }
+    .img1{
+    background-image: url(daniel.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 25vh;
+    }
+    .img2{
+    background-image: url(farah.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 25vh; 
+    }
+    .img3{
+    background-image: url(john.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 25vh;
+    }
+    .img4{
+    background-image: url(max.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 25vh;
+    }
+    .img5{
+    background-image: url(liza.png);
+    background-size: cover;
+    background-position: center;
+    height: 25vh;
+    }
+    .img6{
+    background-image: url(scott.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 25vh;
+    }
+    .img7{
+    background-image: url(juli.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 25vh;
+    }
+    .img8{
+    background-image: url(kevin.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 25vh;
+    }
+    .fa-user{
+    padding: 5px;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: royalblue;
+    }
+    .card-tail{
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px;
+    }
+    .skills{
+    padding: 5px;
+    }
+    .from{
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    }
+    .skill{
+    text-transform: capitalize;
+    letter-spacing: .5px;
+    }
+    .ratings{
+    padding: 5px 0;
+    }
+    .fa-star{
+        padding: 10px;
+    }
+    .fa-star:hover{
+    color: chocolate;
+    transition: .6s;
+    }
+</style>
+
+
+<div class="staffs">
+    <div class="persons">
+    <div class="img1"></div>
+    <div class="desc">
+    <div class="person1">daniel</div>
+    <i class="fa-solid fa-user"></i>
+    </div>
+    <div class="card-tail">
+        <ul class="skills">
+            <li class="from">from : united states </li>
+            <li class="skill">language : english , spanish , italy</li>
+            <li class="ratings">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </li>
+            <li class="rate">8.5/10 </li>
+        </ul>
+    </div>
+   </div>
+
+   <div class="persons">
+    <div class="img2"></div>
+    <div class="desc">
+    <div class="person2">farah</div>
+    <i class="fa-solid fa-user"></i>
+    </div>
+    <div class="card-tail">
+        <ul class="skills">
+            <li class="from">from : united states </li>
+            <li class="skill">language : english , spanish , france</li>
+            <li class="ratings">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </li>
+            <li class="rate">9/10 </li>
+        </ul>
+    </div>
+    </div>
+
+    <div class="persons">
+    <div class="img3"></div>
+    <div class="desc">
+    <div class="person3">john</div>
+    <i class="fa-solid fa-user"></i>
+    </div>
+    <div class="card-tail">
+        <ul class="skills">
+            <li class="from">from : france </li>
+            <li class="skill">language : france , english , spanish , german </li>
+            <li class="ratings">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </li>
+            <li class="rate">8/10 </li>
+        </ul>
+    </div>
+    </div>
+
+    <div class="persons">
+    <div class="img4"></div>
+    <div class="desc">
+    <div class="person4">max</div>
+    <i class="fa-solid fa-user"></i>
+    </div>
+    <div class="card-tail">
+        <ul class="skills">
+            <li class="from">from : italy </li>
+            <li class="skill">language :italy , english , spanish , france</li>
+            <li class="ratings">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </li>
+            <li class="rate">9.5/10 </li>
+        </ul>
+    </div>
+    </div>
+
+    <div class="persons">
+    <div class="img5"></div>
+    <div class="desc">
+    <div class="person5">liza</div>
+    <i class="fa-solid fa-user"></i>
+    </div>
+    <div class="card-tail">
+        <ul class="skills">
+            <li class="from">from : Spain </li>
+            <li class="skill">language : english , spanish , italy , germany , france</li>
+            <li class="ratings">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </li>
+            <li class="rate">7/10 </li>
+        </ul>
+    </div>
+    </div>
+
+    <div class="persons">
+    <div class="img6"></div>
+    <div class="desc">
+    <div class="person6">scott</div>
+    <i class="fa-solid fa-user"></i>
+    </div>
+    <div class="card-tail">
+        <ul class="skills">
+            <li class="from">from : united kingdom</li>
+            <li class="skill">language : english , spanish , italy , france</li>
+            <li class="ratings">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </li>
+            <li class="rate">7.5/10 </li>
+        </ul>
+    </div>
+    </div>
+
+    <div class="persons">
+    <div class="img7"></div>
+    <div class="desc">
+    <div class="person7">juliana</div>
+    <i class="fa-solid fa-user"></i>
+    </div>
+    <div class="card-tail">
+        <ul class="skills">
+            <li class="from">from : germany </li>
+            <li class="skill">language : germany , english , spanish , italy</li>
+            <li class="ratings">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </li>
+            <li class="rate">9/10 </li>
+        </ul>
+    </div>
+    </div>
+
+    <div class="persons">
+    <div class="img8"></div>
+    <div class="desc">
+    <div class="person8">kevin</div>
+    <i class="fa-solid fa-user"></i>
+    </div>
+    <div class="card-tail">
+        <ul class="skills">
+            <li class="from">from : Tanzania </li>
+            <li class="skill">language : france , english , spanish , pourtuogas</li>
+            <li class="ratings">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </li>
+            <li class="rate">8/10 </li>
+        </ul>
+    </div>
+    </div>
+    
+</div>
